@@ -1,8 +1,11 @@
-This repo holds the configuration data for the various virtual machines delivering the environment.data.gov.au subdomain URI handling functionality.
+# PID-Svc-backup
+This repo holds backups of the PID Service machine servings PIDs for the {environment, governance, infrastructure, maritime, reference, transport}.data.gov.au subdomains.
 
-### Main Systems
+This system uses the [pidsvcbkp](https://github.com/nicholascar/pidsvcbkp) script to do this.
 
-* **Apache**
-  * default.conf - the file containing all Apache redirect & proxy config
-* **PID Service**
-  * backup.partial.xml - partial backup of the PID Svc config. Partial as in only current mappings, not history
+## Authors and Contact
+**Nicholas Car**  
+Geoscience Australia  
+<nicholas.car@ga.gov.au>  
+https://orcid.org/0000-0002-8742-7730  
+
