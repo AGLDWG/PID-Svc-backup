@@ -10,4 +10,15 @@
       <value>https://orcid.org/0000-0002-8742-7730</value>
     </action>
   </mapping>
+  <mapping>
+    <path>^/test2</path>
+    <type>Regex</type>
+    <title>Nick test 2</title>
+    <creator>environment</creator>
+    <action>
+      <type>303</type>
+      <name>location</name>
+      <value>http://google.com.au</value>
+    </action>
+  </mapping>
 </backup>
