@@ -1,0 +1,13 @@
+<backup xmlns="urn:csiro:xmlns:pidsvc:backup:1.0" type="partial" scope="db">
+  <mapping>
+    <path>^/nick</path>
+    <type>Regex</type>
+    <title>Nick test</title>
+    <creator>environment</creator>
+    <action>
+      <type>303</type>
+      <name>location</name>
+      <value>https://orcid.org/0000-0002-8742-7730</value>
+    </action>
+  </mapping>
+</backup>
