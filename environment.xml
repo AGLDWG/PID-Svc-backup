@@ -587,6 +587,17 @@
       <value>http://registry2.it.csiro.au/def/ba/glossary${RAW:$1}</value>
     </action>
   </mapping>
+  <mapping>
+    <path>/test</path>
+    <type>Regex</type>
+    <title>Test Mapping</title>
+    <creator>environment</creator>
+    <action>
+      <type>302</type>
+      <name>location</name>
+      <value>http://www.google.com.au</value>
+    </action>
+  </mapping>
   <lookup xmlns="urn:csiro:xmlns:pidsvc:backup:1.0">
     <ns>http://pid.ereefs.info/id/geo/catchmentBBOX</ns>
     <default type="Constant"/>
