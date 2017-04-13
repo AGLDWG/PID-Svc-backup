@@ -515,6 +515,17 @@
     </conditions>
   </mapping>
   <mapping>
+    <path>/def/ba/glossary(/.*)?</path>
+    <type>Regex</type>
+    <title>def BA Glossary</title>
+    <creator>environment</creator>
+    <action>
+      <type>Proxy</type>
+      <name>location</name>
+      <value>http://registry2.it.csiro.au/def/ba/glossary${RAW:$1}</value>
+    </action>
+  </mapping>
+  <mapping>
     <path>/def/op(\.html|\.rdf)*$</path>
     <type>Regex</type>
     <title>def OP</title>
@@ -574,29 +585,23 @@
           </action>
         </actions>
       </condition>
+      <condition>
+        <type>QueryString</type>
+        <match>_format=application/rdf\+xml</match>
+        <actions>
+          <action>
+            <type>AddHttpHeader</type>
+            <name>Content-Type</name>
+            <value>application/rdf+xml</value>
+          </action>
+          <action>
+            <type>303</type>
+            <name>location</name>
+            <value>http://sissvoc.ereefs.info/repo/vocab/op.rdf</value>
+          </action>
+        </actions>
+      </condition>
     </conditions>
-  </mapping>
-  <mapping>
-    <path>/def/ba/glossary(/.*)?</path>
-    <type>Regex</type>
-    <title>def BA Glossary</title>
-    <creator>environment</creator>
-    <action>
-      <type>Proxy</type>
-      <name>location</name>
-      <value>http://registry2.it.csiro.au/def/ba/glossary${RAW:$1}</value>
-    </action>
-  </mapping>
-  <mapping>
-    <path>/test</path>
-    <type>Regex</type>
-    <title>Test Mapping</title>
-    <creator>environment</creator>
-    <action>
-      <type>302</type>
-      <name>location</name>
-      <value>http://www.google.com.au</value>
-    </action>
   </mapping>
   <lookup xmlns="urn:csiro:xmlns:pidsvc:backup:1.0">
     <ns>http://pid.ereefs.info/id/geo/catchmentBBOX</ns>
