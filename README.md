@@ -1,3 +1,5 @@
+*This repository is now deprecated, please see <https://github.com/AGLDWG/pid-proxy>*
+
 # PID-Svc-backup
 This repo holds backups of the PID Service machine servings PIDs for the {environment, governance, infrastructure, maritime, reference, transport}.data.gov.au subdomains.
 
